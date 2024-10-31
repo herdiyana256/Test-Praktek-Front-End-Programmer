@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.bg-gray-50 {
+    background-color: #f9fafb;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: #1f2937;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.nav-links button:hover {
+    color: #3b82f6; /* Warna saat hover */
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.profile-welcome {
+    font-size: 0.875rem;
+}
+
+.profile-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+/* Balance Card */
+.balance-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    text-align: center; /* Center text */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation effect */
+}
+
+.balance-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.balance-amount {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Form Section */
+.topup-form {
+    margin: 2rem 0;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.topup-form h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Top Up Buttons */
+.topup-button {
+    padding: 0.75rem 1.5rem; /* Increase padding for better touch area */
+    border: 1px solid #3b82f6;
+    background-color: white;
+    color: #3b82f6;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+    font-size: 1rem; /* Increase font size */
+}
+
+.topup-button:hover {
+    background-color: #3b82f6;
+    color: white;
+    transform: translateY(-2px); /* Small lift on hover */
+}
+
+.topup-button.selected {
+    background-color: #3b82f6;
+    color: white;
+}
+
+/* Submit Button */
+.submit-button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem; /* Increase padding for better touch area */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    font-size: 1rem; /* Increase font size */
+}
+
+.submit-button:disabled {
+    background-color: #d1d5db; /* Warna abu-abu saat dinonaktifkan */
+    cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+    background-color: #45a049; /* Warna saat hover */
+    transform: translateY(-2px); /* Small lift on hover */
+}
+
+
+.notification {
+    background-color: #e0f7fa; /* Warna latar belakang */
+    color: #00796b; /* Warna teks */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  

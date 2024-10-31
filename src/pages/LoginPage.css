@@ -1,0 +1,127 @@
+.login-container {
+    display: flex;
+    min-height: 100vh; /* Memastikan kontainer mengambil tinggi penuh */
+  }
+  
+  .login-form {
+    flex: 1; /* Kontainer form mengambil ruang yang tersedia */
+    display: flex;
+    flex-direction: column; /* Mengatur elemen form secara vertikal */
+    justify-content: center; /* Menjaga form di tengah vertikal */
+    align-items: center; /* Menjaga konten di tengah horizontal */
+    padding: 40px; /* Menambahkan padding untuk form */
+    background-color: #f9f9f9; /* Warna latar belakang form */
+  }
+  
+  .login-header {
+    display: flex; /* Membuat header menjadi flex */
+    align-items: center; /* Menjaga logo dan teks sejajar */
+    margin-bottom: 20px; /* Jarak bawah header */
+  }
+  
+  .logo {
+    height: 40px; /* Ukuran logo */
+    margin-right: 10px; /* Jarak antara logo dan teks */
+  }
+  
+  .login-title h1 {
+    font-size: 24px; /* Ukuran font untuk judul */
+    margin: 0; /* Menghapus margin */
+  }
+  
+  .login-title h2 {
+    font-size: 18px; /* Ukuran font untuk sub judul */
+    margin: 0; /* Menghapus margin */
+  }
+  
+  .form-space {
+    width: 100%; /* Mengatur lebar form menjadi 100% */
+    max-width: 400px; /* Lebar maksimum form */
+    display: flex;
+    flex-direction: column; /* Mengatur elemen dalam form secara vertikal */
+    gap: 15px; /* Jarak antar elemen dalam form */
+  }
+  
+  .input-field {
+    position: relative; /* Menjaga posisi relatif untuk ikon */
+    width: 100%; /* Mengatur lebar input field menjadi 100% */
+    height: 50px; /* Memperbesar tinggi input field */
+    border-radius: 8px; /* Membulatkan sudut */
+    border: 1px solid #d1d5db; /* Warna border */
+    padding: 12px 16px; /* Padding dalam input */
+    padding-left: 40px; /* Ruang untuk ikon */
+    padding-right: 40px; /* Ruang untuk ikon mata */
+    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam lebar */
+    transition: border-color 0.2s; /* Transisi warna border saat fokus */
+  }
+  
+  
+  .input-icon {
+    position: absolute; /* Memastikan posisi ikon tetap */
+    left: 12px; /* Jarak ikon dari kiri */
+    top: 50%; /* Vertikal di tengah */
+    transform: translateY(-50%); /* Menjaga ikon di tengah input */
+    color: gray; /* Warna ikon */
+  }
+  
+  .input-field:focus {
+    border-color: #ef4444; /* Warna border saat fokus */
+    outline: none; /* Menghapus outline */
+  }
+  
+  .button {
+    width: 100%; /* Mengatur lebar tombol menjadi 100% */
+    height: 50px; /* Memperbesar tinggi tombol */
+    border-radius: 8px; /* Membulatkan sudut tombol */
+    background-color: #ef4444; /* Warna tombol */
+    padding: 12px; /* Padding dalam tombol */
+    font-weight: bold; /* Menebalkan teks */
+    color: white; /* Warna teks */
+    transition: background-color 0.2s; /* Transisi warna tombol saat hover */
+  }
+  
+  .button:hover {
+    background-color: #dc2626; /* Warna lebih gelap saat hover */
+  }
+  
+  .registration-link {
+    text-align: center; /* Menjaga teks di tengah */
+    font-size: 14px; /* Ukuran font untuk link registrasi */
+  }
+  
+  .illustration-container {
+    flex: 1; /* Kontainer ilustrasi mengambil ruang yang tersedia */
+    display: flex;
+    align-items: center; /* Menjaga gambar sejajar di tengah */
+    justify-content: center; /* Menjaga gambar di tengah horizontal */
+    background-color: #fef2f2; /* Warna latar belakang untuk sisi ilustrasi */
+  }
+  
+  .illustration-image {
+    max-width: 100%; /* Mengatur agar gambar tidak melebihi lebar kontainer */
+    height: auto; /* Menjaga rasio aspek gambar */
+  }
+  
+
+  .relative {
+    position: relative;
+}
+
+.eye-button {
+    position: absolute; /* Posisi absolut untuk memastikan berada di atas input */
+    right: 12px; /* Jarak dari kanan */
+    top: 50%; /* Vertikal di tengah */
+    transform: translateY(-50%); /* Menjaga posisi di tengah vertikal */
+    background: none; /* Menghapus background */
+    border: none; /* Menghapus border */
+    cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
+}
+
+.flex {
+    display: flex; /* Menambahkan flexbox untuk mengatur layout */
+    align-items: center; /* Memastikan item di tengah secara vertikal */
+}
+
+.input-field {
+    padding-right: 2.5rem; /* Memberikan ruang untuk ikon mata */
+}

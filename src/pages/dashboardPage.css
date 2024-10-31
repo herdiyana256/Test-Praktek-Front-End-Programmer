@@ -1,0 +1,182 @@
+/* dashboardPage.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb; /* Warna latar belakang yang lebih terang */
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e7eb; /* Warna batas bawah yang lebih halus */
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  nav .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav button {
+    background: none;
+    border: none;
+    color: #4b5563; /* Warna teks */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  nav button:hover {
+    color: #ef4444; /* Warna saat hover */
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-welcome {
+    color: #4b5563; /* Warna teks */
+  }
+  
+  .profile-name {
+    font-size: 1.5rem; /* Ukuran font yang lebih besar untuk nama */
+    font-weight: bold;
+  }
+  
+  /* Balance Card */
+  .balance-card {
+    width: 300px;
+    border-radius: 1rem; /* Membuat sudut lebih halus */
+    padding: 24px;
+    color: white;
+    background: linear-gradient(to bottom right, #f43f5e, #e11d48); /* Warna gradien */
+    position: relative; /* Posisi relatif untuk anak */
+  }
+  
+  .balance-card h2 {
+    margin-bottom: 16px;
+  }
+  
+  .balance-amount {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .show-balance-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9); /* Warna teks yang lebih terang */
+    text-decoration: underline;
+  }
+  
+  /* Services Grid */
+  .services-grid {
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 16px;
+  }
+  
+  .service-button {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 16px;
+    text-align: center;
+    transition: background-color 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  }
+  
+  .service-button:hover {
+    background-color: #f1f5f9; /* Warna latar belakang saat hover */
+  }
+  
+  .service-icon {
+    height: 40px;
+    width: 40px;
+  }
+  
+  /* Promotions Section */
+  .promotions-section {
+    margin-top: 24px;
+  }
+  
+  .promo-card {
+    padding: 16px;
+    border-radius: 0.75rem;
+    position: relative;
+    overflow: hidden; /* Mencegah konten meluber */
+  }
+  
+  .promo-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white; /* Warna teks promo */
+  }
+  
+  .promo-description {
+    color: rgba(255, 255, 255, 0.8); /* Warna teks deskripsi */
+  }
+  
+  /* Responsiveness */
+  @media (min-width: 768px) {
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .promo-card {
+      margin-bottom: 20px; /* Ruang antar promo */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .promo-card {
+      margin-bottom: 24px; /* Ruang antar promo di layar besar */
+    }
+  }
+  
+
+  .banners-container {
+    position: relative;
+    overflow: hidden; /* Untuk mencegah overflow pada banner */
+  }
+  
+  .banners-wrapper {
+    display: flex; /* Mengatur banner untuk tampil berdampingan */
+    transition: transform 0.5s ease; /* Transisi saat berpindah */
+  }
+  
+  /* Atur lebar banner */
+  .promo-card {
+    width: 100%; /* Setiap banner mengambil lebar penuh */
+    flex: 0 0 auto; /* Agar flex tidak menyusut */
+    max-width: 400px; /* Atur lebar maksimum banner jika diperlukan */
+  }
+  

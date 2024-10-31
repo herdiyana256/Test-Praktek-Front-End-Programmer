@@ -1,0 +1,87 @@
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb; /* Light gray background */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ffffff; /* White background for navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: #4a5568; /* Gray color for text */
+  font-size: 0.875rem; /* Text size */
+  cursor: pointer;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem; /* Margin below profile section */
+}
+
+.profile-image {
+  border-radius: 50%; /* Circular profile image */
+  width: 60px; /* Width of the profile image */
+  height: 60px; /* Height of the profile image */
+}
+
+.balance-card {
+  background-color: #ffffff; /* White background for balance card */
+  padding: 1rem; /* Padding inside the card */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for the card */
+}
+
+.balance-amount {
+  font-size: 1.5rem; /* Large font size for balance amount */
+  font-weight: bold; /* Bold text */
+}
+
+.transaction-list {
+  background-color: #ffffff; /* White background for transaction list */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for the list */
+  padding: 1rem; /* Padding inside the list */
+}
+
+.transaction-item {
+  border-bottom: 1px solid #e2e8f0; /* Light gray border between items */
+  padding: 0.5rem 0; /* Padding for transaction items */
+}
+
+.transaction-item:last-child {
+  border-bottom: none; /* No border for the last item */
+}
+
+.transaction-amount {
+  font-weight: bold; /* Bold text for transaction amount */
+}
+
+.show-more {
+  margin-top: 1rem; /* Margin above 'show more' button */
+  background-color: #4a5568; /* Dark gray background for button */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 0.5rem 1rem; /* Padding inside button */
+  border-radius: 0.25rem; /* Rounded corners for button */
+  cursor: pointer; /* Cursor pointer on hover */
+}
+
+.show-more:hover {
+  background-color: #2d3748; /* Darker gray on hover */
+}
+
+.notification {
+  margin-top: 1rem; /* Margin above notification */
+  color: #4a5568; /* Gray color for notifications */
+}
